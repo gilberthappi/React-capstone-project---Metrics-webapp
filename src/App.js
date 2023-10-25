@@ -1,21 +1,11 @@
-/* eslint-disable import/extensions */
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Coins from './routes/Coins';
-import SpecificCoin from './routes/SpecificCoin';
+import CoinsList from './components/CoinsList';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Coins />} />
-          <Route path="coin/:id" element={<SpecificCoin />} />
-          {' '}
-
-        </Route>
-      </Routes>
-    </Router>
+    <div className="App text-zinc-600">
+      Hola REACT!
+      <CoinsList />
+    </div>
   );
 }
 
