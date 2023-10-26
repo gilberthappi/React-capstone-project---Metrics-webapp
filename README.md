@@ -63,7 +63,7 @@ Crypto Watcher is a webapp that displays information about the top 100 cryptocur
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Live Demo : [Crypto Watcher](...)
+> Live Demo : [Crypto Watcher](https://gilberthappi.github.io/React-capstone-project---Metrics-webapp/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
