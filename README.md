@@ -121,8 +121,8 @@ To run tests, run the following command:
 
 👤 **Eng. Happi Gilbert**
 
-- GitHub: [@JuanDiegoGuerra](https://github.com/gilberthappi)
-- LinkedIn: [Juan Guerra](https://www.linkedin.com/in/dushimimana-gilbert-happi-997b2a262/)
+- GitHub: [@Eng. Happi Gilbert](https://github.com/gilberthappi)
+- LinkedIn: [Eng. Happi Gilbert](https://www.linkedin.com/in/dushimimana-gilbert-happi-997b2a262/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
