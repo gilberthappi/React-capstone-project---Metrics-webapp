@@ -44,7 +44,9 @@ function Coin({
     </NavLink>
   );
 }
+
 export default Coin;
+
 Coin.propTypes = {
   name: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,

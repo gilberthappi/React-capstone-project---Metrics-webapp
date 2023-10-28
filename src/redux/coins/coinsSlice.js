@@ -33,9 +33,8 @@ const coinsSlice = createSlice({
     builder
       .addCase(getCoins.fulfilled, (state, action) => {
         state.status = 'fulfilled';
-        const newArr = [];
-        action.payload.forEach((coin) => {
-          const newCoin = {
+        if (Array.isArray(action.payload)) {
+          const newArr = action.payload.map((coin) => ({
             id: coin.id,
             name: coin.name,
             symbol: coin.symbol,
@@ -47,13 +46,15 @@ const coinsSlice = createSlice({
             web: coin.websiteUrl,
             marketCap: coin.marketCap,
             volume: coin.volume,
-          };
-          newArr.push(newCoin);
-        });
-        state.coinsArr = newArr;
+          }));
+          state.coinsArr = newArr;
+        } else {
+        // Handle the case where action.payload is not an array (e.g., an error occurred).
+          state.error = 'Unexpected data format in the API response';
+        }
       })
       .addCase(getCoins.pending, (state) => {
-        state.status = 'Loading';
+        state.status = 'loading';
       })
       .addCase(getCoins.rejected, (state, action) => {
         state.status = 'rejected';
