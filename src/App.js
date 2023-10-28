@@ -10,8 +10,6 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Coins />} />
           <Route path="coin/:id" element={<SpecificCoin />} />
-          {' '}
-
         </Route>
       </Routes>
     </Router>
